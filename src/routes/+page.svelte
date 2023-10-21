@@ -10,16 +10,18 @@
 
 <div class="content">
   <article class="left"><LouTaylorMusic /></article>
-  <article class="right" style="justify-content: flex-end;">
-    <img src={lou_taylor_home} alt="Image of lou" />
+  <article class="right">
+    <img src={lou_taylor_home} alt="Lou Taylor singing" />
   </article>
-
-  <h1 class="left">asdf</h1>
-  <h1 class="right">asdf</h1>
-  <h1>asdf</h1>
-  <h1>asdf</h1>
-  <h1>asdf</h1>
-  <h1>asdf</h1>
+  <article class="left">
+    <h1>Uppcomming:</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+      possimus quos necessitatibus odio culpa alias illum animi deleniti
+      reiciendis minus, id doloribus nemo aliquid debitis excepturi totam eum
+      praesentium eaque!
+    </p>
+  </article>
 </div>
 
 <style lang="scss">
@@ -27,11 +29,13 @@
 
   article {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   img {
-    max-width: 30vw;
+    max-width: 100%;
   }
 
   .content {

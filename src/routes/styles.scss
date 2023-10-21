@@ -17,10 +17,12 @@ h1,
 h2,
 p {
 	font-weight: 400;
+  margin: settings.$margin-small settings.$margin-big;
 }
 
 p {
 	line-height: 1.5;
+  margin: settings.$margin-small;
 }
 
 a {
