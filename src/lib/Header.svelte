@@ -14,7 +14,6 @@
     open: false,
     src: ti_menue,
   };
-  let menue_src: string = ti_menue;
 
   $: {
     if (menue.open) {
@@ -23,6 +22,14 @@
       menue.src = ti_menue;
     }
   }
+  function getPageName(): string {
+    let name: string[] = [$page.url.pathname];
+    name = name[0].split("/");
+    return (
+      name[name.length - 1].charAt(0).toUpperCase() +
+      name[name.length - 1].slice(1)
+    );
+  }
 </script>
 
 <header>
@@ -30,6 +37,12 @@
 
   <nav>
     <ul class="desktop">
+      {#if !entries.find((e) => e.url === $page.url.pathname)}
+        <li aria-current="page">
+          <a href="/">{getPageName()}</a>
+        </li>
+      {/if}
+
       {#each entries as entry}
         <li
           aria-current={$page.url.pathname === entry.url ? "page" : undefined}
@@ -47,7 +60,7 @@
         </li>
       {:else}
         <li aria-current="page">
-          <a href="/">{$page.url.pathname}</a>
+          <a href="/">{getPageName()}</a>
         </li>
       {/if}
       {#if menue.open}

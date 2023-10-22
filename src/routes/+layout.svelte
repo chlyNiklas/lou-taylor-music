@@ -1,5 +1,6 @@
 <script>
   import Header from "$lib/Header.svelte";
+  import Footer from "$lib/component/Footer.svelte";
   import "./styles.scss";
 </script>
 
@@ -9,12 +10,7 @@
   <main>
     <slot />
   </main>
-
-  <footer>
-    <p>
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
-    </p>
-  </footer>
+  <Footer />
 </div>
 
 <style lang="scss">
@@ -36,29 +32,12 @@
     box-sizing: border-box;
   }
 
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    background-color: settings.$color-dark-0;
-    color: settings.$color-light-2;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
   @media (min-width: settings.$threshold-mobile) and (max-width: settings.$threshold-desktop) {
-    footer {
-      padding: 12px 0;
-    }
     main {
       width: 80vw;
     }
   }
-  @media (min-width: 600px) {
+  @media (min-width: settings.$threshold-desktop) {
     main {
       width: 55vw;
     }
