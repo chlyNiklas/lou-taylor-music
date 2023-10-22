@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sass": "^1.69.4"
+		"sass": "^1.69.4",
+		"typicons.font": "^2.1.2"
 	}
 }

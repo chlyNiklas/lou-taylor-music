@@ -50,7 +50,7 @@
     font-weight: bold;
   }
 
-  @media (min-width: 480px) and (max-width: 600px) {
+  @media (min-width: settings.$threshold-mobile) and (max-width: settings.$threshold-desktop) {
     footer {
       padding: 12px 0;
     }
