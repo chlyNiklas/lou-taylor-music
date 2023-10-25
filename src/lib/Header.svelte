@@ -8,7 +8,7 @@
     { url: "/gallery", name: "Gallery" },
     { url: "/projects", name: "Projects" },
     { url: "/contact", name: "Contact" },
-    { url: "/biographie", name: "Biographie" },
+    { url: "/biography", name: "Biography" },
   ];
   let menue = {
     open: false,
@@ -54,19 +54,21 @@
     <ul class="mobile" style="flex-direction: column; ">
       {#if entries.find((e) => e.url === $page.url.pathname)}
         <li aria-current="page">
-          <a href="/"
+          <a href="/" on:click={() => (menue.open = false)}
             >{entries.find((e) => e.url === $page.url.pathname).name}</a
           >
         </li>
       {:else}
-        <li aria-current="page">
+        <li aria-current="page" on:click={() => (menue.open = false)}>
           <a href="/">{getPageName()}</a>
         </li>
       {/if}
       {#if menue.open}
         {#each entries.filter((e) => e.url !== $page.url.pathname) as entry}
           <li>
-            <a href={entry.url}>{entry.name}</a>
+            <a href={entry.url} on:click={() => (menue.open = false)}
+              >{entry.name}</a
+            >
           </li>
         {/each}
       {/if}

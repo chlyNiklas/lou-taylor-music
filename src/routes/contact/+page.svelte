@@ -1,8 +1,18 @@
 <div class="content">
   <article class="left">
     <h1>Get in touch with me</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore neque
+      porro debitis praesentium saepe, ut et repellendus ea, odio ad laboriosam
+      quasi asperiores perspiciatis facere. Deserunt, odio debitis? In, maiores!
+    </p>
+  </article>
+  <article class="right">
+    <h1>My socials</h1>
+    <p>Instagram, Youtube, Soundcloud</p>
   </article>
 </div>
+
 <style lang="scss">
   @import "$lib/settings.scss";
 
