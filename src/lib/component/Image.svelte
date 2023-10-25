@@ -1,0 +1,60 @@
+<script lang="ts">
+  import Modal from "./Modal.svelte";
+
+  export let src: string;
+  export let alt: string;
+
+  let details: boolean = false;
+</script>
+
+<button on:click={() => (details = true)}>
+  <img {src} {alt} />
+  <p class="ontop">{alt}</p>
+
+  <Modal bind:showModal={details}>
+    <img {src} {alt} />
+    <p>{alt}</p>
+  </Modal>
+</button>
+
+<style lang="scss">
+  @use "$lib/settings.scss";
+
+  button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0000;
+    border: 0;
+    margin: settings.$margin-small;
+
+    transition-duration: settings.$transition-duration-short;
+  }
+  button:hover > img {
+    filter: blur(5px) brightness(50%);
+    transition-duration: settings.$transition-duration-short;
+  }
+  button:hover > p {
+    opacity: 1;
+    transition-duration: settings.$transition-duration-short;
+  }
+  p.ontop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: settings.$color-light-0;
+    text-align: center;
+
+    opacity: 0;
+    transition-duration: settings.$transition-duration-short;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
