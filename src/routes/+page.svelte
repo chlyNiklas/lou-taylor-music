@@ -1,4 +1,5 @@
 <script>
+  import Image from "$lib/component/Image.svelte";
   import lou_taylor_home from "$lib/images/lou-taylor-home.jpeg";
   import LouTaylorMusic from "$lib/component/LouTaylorMusic.svelte";
 </script>
@@ -11,7 +12,7 @@
 <div class="content">
   <article class="left"><LouTaylorMusic /></article>
   <article class="right">
-    <img src={lou_taylor_home} alt="Lou Taylor singing" />
+    <Image src={lou_taylor_home} alt="Lou Taylor singing" />
   </article>
   <article class="left">
     <h1>Uppcomming:</h1>
@@ -25,8 +26,6 @@
 </div>
 
 <style lang="scss">
-  @import "$lib/settings.scss";
-
   article {
     display: flex;
     flex-direction: column;
