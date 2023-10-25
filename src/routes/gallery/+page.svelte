@@ -1,21 +1,27 @@
 <script lang="ts">
   import Image from "$lib/component/Image.svelte";
-  import lou_taylor_home from "$lib/images/lou-taylor-home.jpeg";
-  let array: number[] = [1, 2, 3, 4, 5];
+  import type { ImageSources } from "$lib/types/common";
+  import { onMount } from "svelte";
+  let images: ImageSources[] = [];
+
+  onMount(() => {
+    getImages();
+  });
+
+  async function getImages() {
+    let res = await fetch("/gallery/manifest.json");
+    images = await res.json();
+  }
+  $: console.log(images);
 </script>
 
 <div class="content">
-  {#each array as i}
+  {#each images as image, i}
     <article class:left={i % 2 === 0} class:right={i % 2 === 1}>
-      <Image src={lou_taylor_home} alt="Lou" />
+      <Image src={image.src} alt={image.alt} />
       <article />
     </article>
   {/each}
-  <button
-    on:click={async () => {
-      console.log(await fetch("/gallery/declarations.csv").body);
-    }}>asdf</button
-  >
 </div>
 
 <style lang="scss">

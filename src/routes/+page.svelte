@@ -33,10 +33,6 @@
     justify-content: center;
     text-align: center;
   }
-  img {
-    max-width: 100%;
-  }
-
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
