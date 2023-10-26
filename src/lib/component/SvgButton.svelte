@@ -1,7 +1,7 @@
 <script lang="ts">
   export let src: string;
   export let color: "dark" | "light" = "dark";
-  $: isSvg = !!src.endsWith(".svg"); // we use $: because you may dynamically change the src so the component needs to be reactive. if you are sure that it won't be changed it will be great to use instead `const`
+  $: isSvg = !!src.endsWith(".svg");
   $: svgRoute = isSvg ? src.replace(".svg", ".svg?raw") : null; // you can also do `${src}?raw`
 </script>
 
@@ -16,7 +16,7 @@
 </button>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
   button {
     display: flex;
     align-items: center;

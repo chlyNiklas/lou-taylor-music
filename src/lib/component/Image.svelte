@@ -3,22 +3,25 @@
 
   export let src: string;
   export let alt: string;
+  export let style: string = "";
 
   let details: boolean = false;
 </script>
 
-<button on:click={() => (details = true)}>
+<button {style} on:click={() => (details = true)}>
   <img {src} {alt} />
   <p class="ontop">{alt}</p>
 
   <Modal bind:showModal={details}>
-    <img {src} {alt} />
-    <p>{alt}</p>
+    <div>
+      <img {src} {alt} />
+      <p>{alt}</p>
+    </div>
   </Modal>
 </button>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
 
   button {
     display: flex;
@@ -31,6 +34,9 @@
     margin: settings.$margin-small;
 
     transition-duration: settings.$transition-duration-short;
+
+    max-height: 100%;
+    max-width: 100%;
   }
   button:hover > img {
     filter: blur(5px) brightness(50%);
@@ -51,6 +57,10 @@
 
     opacity: 0;
     transition-duration: settings.$transition-duration-short;
+  }
+  div {
+    max-height: 100%;
+    max-width: 100%;
   }
 
   img {

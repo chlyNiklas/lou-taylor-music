@@ -1,7 +1,7 @@
-@use "$lib/settings.scss";
+@use "$lib/style/settings.scss";
 
 :root {
-		font-family: settings.$font-body;
+  font-family: settings.$font-body;
 	color: settings.$color-text;
 }
 

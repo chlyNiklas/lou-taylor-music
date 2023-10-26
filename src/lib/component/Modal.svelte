@@ -28,7 +28,7 @@
 </dialog>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
   span {
     position: absolute;
     top: 0.5em;
@@ -41,10 +41,13 @@
     background-color: settings.$color-bg-1;
   }
   dialog {
-    position: relative;
     min-width: 20vw;
-    border: solid 1px #272524;
+    max-width: calc(100vw - 50px);
+    max-height: calc(100vh - 50px);
+
+    border: solid 0;
     border-radius: settings.$margin-small;
+
     background-color: settings.$color-bg-1;
   }
 </style>

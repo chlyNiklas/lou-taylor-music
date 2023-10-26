@@ -14,7 +14,7 @@
 </div>
 
 <style lang="scss">
-  @import "$lib/settings.scss";
+  @import "$lib/style/settings.scss";
 
   article {
     display: flex;

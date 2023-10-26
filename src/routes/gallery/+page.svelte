@@ -9,10 +9,9 @@
   });
 
   async function getImages() {
-    let res = await fetch("/gallery/manifest.json");
+    let res = await fetch("/assets/manifest.json");
     images = await res.json();
   }
-  $: console.log(images);
 </script>
 
 <div class="content">
@@ -25,9 +24,8 @@
 </div>
 
 <style lang="scss">
-  img {
-    max-width: 100%;
-  }
+  @use "$lib/style/settings.scss";
+  @use "$lib/style/grid.scss";
   article {
     display: flex;
     flex-direction: column;
@@ -36,13 +34,12 @@
     text-align: center;
   }
   .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid.iregular-thirds;
   }
   .left {
-    grid-column: 1 / span 2;
+    @include grid.left-side;
   }
   .right {
-    grid-column: 2 / span 3;
+    @include grid.right-side;
   }
 </style>

@@ -10,7 +10,9 @@
 </svelte:head>
 
 <div class="content">
-  <article class="left"><LouTaylorMusic /></article>
+  <article class="left ltm">
+    <LouTaylorMusic />
+  </article>
   <article class="right">
     <Image src={lou_taylor_home} alt="Lou Taylor singing" />
   </article>
@@ -26,6 +28,8 @@
 </div>
 
 <style lang="scss">
+  @use "$lib/style/settings.scss";
+  @use "$lib/style/grid.scss";
   article {
     display: flex;
     flex-direction: column;
@@ -33,14 +37,19 @@
     justify-content: center;
     text-align: center;
   }
+
   .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid.iregular-thirds;
   }
   .left {
-    grid-column: 1 / span 2;
+    @include grid.left-side;
   }
   .right {
-    grid-column: 2 / span 3;
+    @include grid.right-side;
+  }
+  @media (min-with: settings.$threshold-mobile) {
+    article.ltm {
+      align-items: flex-start;
+    }
   }
 </style>

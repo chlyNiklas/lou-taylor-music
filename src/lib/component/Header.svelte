@@ -2,7 +2,7 @@
   import { page } from "$app/stores";
   import ti_menue from "typicons.font/src/svg/th-menu.svg";
   import ti_close from "typicons.font/src/svg/times.svg";
-  import SvgButton from "./component/SvgButton.svelte";
+  import SvgButton from "$lib/component/SvgButton.svelte";
   const entries = [
     { url: "/", name: "Home" },
     { url: "/gallery", name: "Gallery" },
@@ -59,19 +59,17 @@
           >
         </li>
       {:else}
-        <li aria-current="page" on:click={() => (menue.open = false)}>
-          <a href="/">{getPageName()}</a>
+        <li aria-current="page">
+          <a href="/" on:click={() => (menue.open = false)}>{getPageName()}</a>
         </li>
       {/if}
-      {#if menue.open}
-        {#each entries.filter((e) => e.url !== $page.url.pathname) as entry}
-          <li>
-            <a href={entry.url} on:click={() => (menue.open = false)}
-              >{entry.name}</a
-            >
-          </li>
-        {/each}
-      {/if}
+      {#each entries.filter((e) => e.url !== $page.url.pathname) as entry}
+        <li class:invisible={!menue.open}>
+          <a href={entry.url} on:click={() => (menue.open = false)}
+            >{entry.name}</a
+          >
+        </li>
+      {/each}
     </ul>
   </nav>
 
@@ -87,7 +85,7 @@
 </header>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
   header {
     display: flex;
     background-color: settings.$color-dark-0;
@@ -116,6 +114,12 @@
     height: 2em;
     object-fit: contain;
   }
+  .invisible {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    transition: all settings.$transition-duration-long ease-in-out;
+  }
 
   svg {
     width: 2em;
@@ -141,8 +145,13 @@
 
   li {
     position: relative;
-    height: 100%;
+    height: 1em;
     margin: 1em 0.5em;
+    padding: 0.1em;
+
+    overflow: hidden;
+
+    transition: all settings.$transition-duration-long ease-in-out;
   }
 
   li[aria-current="page"] a {
@@ -159,7 +168,6 @@
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-decoration: none;
-    transition: color 0.2s linear;
   }
 
   a:hover {

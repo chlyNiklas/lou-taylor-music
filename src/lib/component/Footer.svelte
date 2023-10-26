@@ -10,7 +10,7 @@
 </footer>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
   footer {
     display: grid;
     padding: 12px;

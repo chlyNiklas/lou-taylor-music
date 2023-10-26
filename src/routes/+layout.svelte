@@ -1,5 +1,5 @@
 <script>
-  import Header from "$lib/Header.svelte";
+  import Header from "$lib/component/Header.svelte";
   import Footer from "$lib/component/Footer.svelte";
   import "./styles.scss";
 </script>
@@ -14,7 +14,7 @@
 </div>
 
 <style lang="scss">
-  @use "$lib/settings.scss";
+  @use "$lib/style/settings.scss";
   .app {
     display: flex;
     flex-direction: column;
