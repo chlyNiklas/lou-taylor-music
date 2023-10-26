@@ -32,14 +32,9 @@
     box-sizing: border-box;
   }
 
-  @media (min-width: settings.$threshold-mobile) and (max-width: settings.$threshold-desktop) {
-    main {
-      width: 80vw;
-    }
-  }
   @media (min-width: settings.$threshold-desktop) {
     main {
-      width: 55vw;
+      width: 80vw;
     }
   }
 </style>

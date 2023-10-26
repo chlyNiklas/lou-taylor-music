@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
   import Image from "$lib/component/Image.svelte";
   import lou_taylor_home from "$lib/images/lou-taylor-home.jpeg";
   import LouTaylorMusic from "$lib/component/LouTaylorMusic.svelte";
+  import Markdown from "$lib/component/Markdown.svelte";
 </script>
 
 <svelte:head>
@@ -18,12 +19,7 @@
   </article>
   <article class="left">
     <h1>Uppcomming:</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
-      possimus quos necessitatibus odio culpa alias illum animi deleniti
-      reiciendis minus, id doloribus nemo aliquid debitis excepturi totam eum
-      praesentium eaque!
-    </p>
+    <Markdown src="/etc/uppcomming.md" />
   </article>
 </div>
 
@@ -47,8 +43,8 @@
   .right {
     @include grid.right-side;
   }
-  @media (min-with: settings.$threshold-mobile) {
-    article.ltm {
+  @media (min-width: settings.$threshold-mobile) {
+    .ltm {
       align-items: flex-start;
     }
   }

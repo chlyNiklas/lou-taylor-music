@@ -8,13 +8,28 @@
     </p>
   </article>
   <article class="right">
-    <h1>My socials</h1>
+    <h1>socialmedia,</h1>
     <p>Instagram, Youtube, Soundcloud</p>
+  </article>
+  <article class="left">
+    <h1>an <a href="mailto:contact@lou-taylor.com">email</a>,</h1>
+    <p>Just write me, usualy i'm not that rude.</p>
+  </article>
+  <article class="right">
+    <h1>or even a letter</h1>
+    <p>Instagram, Youtube, Soundcloud</p>
+    <address>
+      Lou Taylor <br />
+      Musterstrasse 3 <br />
+      6969 Musterort<br />
+      Switzerland <br />
+    </address>
   </article>
 </div>
 
 <style lang="scss">
-  @import "$lib/style/settings.scss";
+  @use "$lib/style/settings.scss";
+  @use "$lib/style/grid.scss";
 
   article {
     display: flex;
@@ -23,18 +38,17 @@
     justify-content: center;
     text-align: center;
   }
-  img {
-    max-width: 100%;
-  }
 
   .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid.iregular-thirds;
   }
   .left {
-    grid-column: 1 / span 2;
+    @include grid.left-side;
   }
   .right {
-    grid-column: 2 / span 3;
+    @include grid.right-side;
+  }
+  address {
+    text-align: left;
   }
 </style>

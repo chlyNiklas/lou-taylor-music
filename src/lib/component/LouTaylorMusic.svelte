@@ -12,7 +12,7 @@
   @use "$lib/style/settings.scss";
   @use "sass:math";
   h1 {
-    margin: math.div(settings.$margin-small, 4) settings.$margin-big;
+    margin: math.div(settings.$margin-small, 4) settings.$margin-small;
   }
   div {
     display: grid;

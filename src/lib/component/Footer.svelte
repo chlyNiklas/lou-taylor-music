@@ -1,6 +1,6 @@
 <footer>
   <p>
-    <a href="/impressum">Impressum</a>
+    <a href="/imprint">imprint</a>
   </p>
   <p>
     Icons on this website are <a href="https://www.s-ings.com/typicons/"
