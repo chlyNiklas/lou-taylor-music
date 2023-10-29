@@ -2,7 +2,8 @@
   export let src: string;
   export let color: "dark" | "light" = "dark";
   $: isSvg = !!src.endsWith(".svg");
-  $: svgRoute = isSvg ? src.replace(".svg", ".svg?raw") : null; // you can also do `${src}?raw`
+  $: svgRoute = isSvg ? src : null; // you can also do `${src}?raw`
+  /* $: svgRoute = isSvg ? src.replace(".svg", ".svg?raw") : null; // you can also do `${src}?raw` */
 </script>
 
 <button on:click class:dark={color === "dark"} class:light={color === "light"}>
