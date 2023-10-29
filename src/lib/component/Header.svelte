@@ -5,10 +5,10 @@
   import SvgButton from "$lib/component/SvgButton.svelte";
   const entries = [
     { url: "/", name: "Home" },
-    { url: "/gallery", name: "Gallery" },
-    { url: "/projects", name: "Projects" },
-    { url: "/contact", name: "Contact" },
-    { url: "/biography", name: "Biography" },
+    { url: "/gallery/", name: "Gallery" },
+    { url: "/projects/", name: "Projects" },
+    { url: "/contact/", name: "Contact" },
+    { url: "/biography/", name: "Biography" },
   ];
   let menue = {
     open: false,

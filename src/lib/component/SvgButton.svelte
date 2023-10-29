@@ -1,18 +1,19 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   export let src: string;
   export let color: "dark" | "light" = "dark";
-  $: isSvg = !!src.endsWith(".svg");
-  $: svgRoute = isSvg ? src : null; // you can also do `${src}?raw`
-  /* $: svgRoute = isSvg ? src.replace(".svg", ".svg?raw") : null; // you can also do `${src}?raw` */
+  let svg: string | null = null;
+  onMount(async () => {
+    svg = await (await fetch(src)).text();
+  });
 </script>
 
 <button on:click class:dark={color === "dark"} class:light={color === "light"}>
-  {#if isSvg && svgRoute != null}
-    {#await import(svgRoute)}
-      <div>loading...</div>
-    {:then value}
-      {@html value.default} <!-- the svg code will be inject here -->
-    {/await}
+  {#if svg}
+    {@html svg}
+  {:else}
+    <p>load..</p>
   {/if}
 </button>
 
