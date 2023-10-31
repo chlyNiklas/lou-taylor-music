@@ -1,3 +1,7 @@
+<script>
+  import Contact from "$lib/component/Contact.svelte";
+</script>
+
 <div class="content">
   <article class="left">
     <h1>Get in touch with me</h1>
@@ -14,6 +18,11 @@
   <article class="left">
     <h1>an <a href="mailto:contact@lou-taylor.com">email</a>,</h1>
     <p>Just write me, usualy i'm not that rude.</p>
+  </article>
+
+  <article class="right">
+    <h1>right here,</h1>
+    <Contact />
   </article>
   <article class="right">
     <h1>or even a letter</h1>
