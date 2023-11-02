@@ -13,9 +13,8 @@
   <article class="right">
     <h1>socialmedia,</h1>
     <p>
-      <a
-        href="https://instagram.com/lou.t_music?igshid=YzAwZjE1ZTI0Zg=="
-        target="_blank">Instagram</a
+      <a href="https://www.instagram.com/lou.t_jazz/" target="_blank"
+        >Instagram</a
       >,
       <a href="https://on.soundcloud.com/P6kds" target="_blank">Soundcloud</a>
     </p>

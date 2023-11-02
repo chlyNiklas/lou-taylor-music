@@ -3,7 +3,7 @@
 
   export let src: string;
   export let color: "dark" | "light" = "dark";
-  export let name: string = "icon";
+  export let ariaLabel: string = "icon";
 
   let svg: string | null = null;
   let mounted: boolean = false;
@@ -20,7 +20,8 @@
   on:click
   class:dark={color === "dark"}
   class:light={color === "light"}
-  {name}
+  id={ariaLabel}
+  aria-label={ariaLabel}
 >
   {#if svg}
     {@html svg}

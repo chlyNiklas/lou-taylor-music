@@ -112,5 +112,6 @@ button:focus:not(:focus-visible) {
   }
   table {
     border-radius: settings.$margin-small;
+    margin: settings.$margin-big settings.$margin-small ;
   }
 }

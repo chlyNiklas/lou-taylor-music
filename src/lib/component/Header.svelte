@@ -26,8 +26,8 @@
     let name: string[] = [$page.url.pathname];
     name = name[0].split("/");
     return (
-      name[name.length - 1].charAt(0).toUpperCase() +
-      name[name.length - 1].slice(1)
+      name[name.length - 2].charAt(0).toUpperCase() +
+      name[name.length - 2].slice(1)
     );
   }
 </script>
@@ -78,7 +78,7 @@
       <SvgButton
         src={menue.src}
         color="light"
-        name={!menue.open ? "show menu" : "hide menu"}
+        ariaLabel={!menue.open ? "show menu" : "hide menu"}
         on:click={() => (menue.open = !menue.open)}
       />
     </div>
