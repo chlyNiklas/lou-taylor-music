@@ -1,12 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  let mounted: boolean = false;
   export let src: string;
   export let color: "dark" | "light" = "dark";
   let svg: string | null = null;
   onMount(async () => {
-    svg = await (await fetch(src)).text();
+    mounted = true;
   });
+  async function loadSvg() {
+    svg = await (await fetch(src)).text();
+  }
+  $: if (mounted && src) loadSvg();
 </script>
 
 <button on:click class:dark={color === "dark"} class:light={color === "light"}>
