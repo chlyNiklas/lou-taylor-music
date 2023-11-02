@@ -18,7 +18,7 @@
     <Image src={lou_taylor_home} alt="Lou Taylor singing" />
   </article>
   <article class="left">
-    <h1>Uppcomming:</h1>
+    <h1>Upcoming:</h1>
     <Markdown src="/etc/uppcomming.md" />
   </article>
 </div>

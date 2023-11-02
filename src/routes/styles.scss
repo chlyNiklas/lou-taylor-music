@@ -26,12 +26,13 @@ p {
 }
 
 a {
+	font-weight: 600;
 	color: settings.$color-accent-strong;
-	text-decoration: none;
+	text-decoration: underline ;
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: underline dotted;
 }
 
 h1 {

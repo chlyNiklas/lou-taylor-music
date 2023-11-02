@@ -1,4 +1,5 @@
 <script lang="ts">
+  export const to: string = "contact@lou-taylor.ch";
   type Email = {
     from: string;
     to: string;
@@ -11,7 +12,7 @@
 
   let form: Email = {
     from: "",
-    to: "contact@lou-taylor.ch",
+    to: to,
     subject: "",
     message: "",
   };
@@ -78,7 +79,12 @@
   @use "$lib/style/settings.scss";
   form {
     display: grid;
-    grid-gap: 10px;
+    gap: settings.$margin-small;
+    margin: settings.$margin-big;
+
+    width: 75%;
+    min-width: 200px;
+    max-width: 350px;
 
     input,
     textarea {
@@ -107,13 +113,16 @@
     }
 
     button {
+      display: block;
+
+      margin: 0 auto;
+      padding: settings.$margin-small settings.$margin-big;
+
       background-color: settings.$color-accent-strong;
       color: white;
-      padding: 10px 15px;
       border: none;
-      border-radius: 4px;
+      border-radius: settings.$margin-small;
       cursor: pointer;
-      font-size: 16px;
 
       &:hover {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
