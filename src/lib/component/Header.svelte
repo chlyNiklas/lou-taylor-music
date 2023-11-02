@@ -78,6 +78,7 @@
       <SvgButton
         src={menue.src}
         color="light"
+        name={!menue.open ? "show menu" : "hide menu"}
         on:click={() => (menue.open = !menue.open)}
       />
     </div>
@@ -174,12 +175,12 @@
     color: settings.$color-accent-strong;
   }
 
-  @media (min-width: settings.$threshold-mobile) {
+  @media (min-width: settings.$threshold-desktop) {
     .mobile {
       display: none;
     }
   }
-  @media (max-width: settings.$threshold-mobile) {
+  @media (max-width: settings.$threshold-desktop) {
     .desktop {
       display: none;
     }

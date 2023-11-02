@@ -28,4 +28,6 @@
   });
 </script>
 
-{@html output}
+<div class="markdown">
+  {@html output}
+</div>

@@ -6,9 +6,11 @@
   }
   @media (min-width: settings.$threshold-mobile) and (max-width: (settings.$threshold-desktop + 200px)) {
     grid-template-columns: 1fr 3fr 1fr;
+    gap: 3em 0px;
   }
   @media (min-width: (settings.$threshold-desktop + 200px)) {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 7em 0px;
   }
 }
 @mixin left-side {

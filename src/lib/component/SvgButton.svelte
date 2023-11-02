@@ -1,10 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  let mounted: boolean = false;
   export let src: string;
   export let color: "dark" | "light" = "dark";
+  export let name: string = "icon";
+
   let svg: string | null = null;
+  let mounted: boolean = false;
   onMount(async () => {
     mounted = true;
   });
@@ -14,7 +16,12 @@
   $: if (mounted && src) loadSvg();
 </script>
 
-<button on:click class:dark={color === "dark"} class:light={color === "light"}>
+<button
+  on:click
+  class:dark={color === "dark"}
+  class:light={color === "light"}
+  {name}
+>
   {#if svg}
     {@html svg}
   {:else}

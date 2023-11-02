@@ -91,3 +91,26 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+.markdown {
+
+  text-align: left;
+  h1,
+  h2,
+  h3 {
+    text-align: left;
+    margin: settings.$margin-big settings.$margin-small;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  table, 
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: settings.$margin-big;
+  }
+  table {
+    border-radius: settings.$margin-small;
+  }
+}
