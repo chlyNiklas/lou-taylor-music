@@ -9,7 +9,7 @@
   });
 
   async function getImages() {
-    let res = await fetch("/assets/manifest.json");
+    let res = await fetch("/etc/gallery.json");
     images = await res.json();
   }
 </script>

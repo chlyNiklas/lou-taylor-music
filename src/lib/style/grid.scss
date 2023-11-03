@@ -3,6 +3,7 @@
   display: grid;
   @media (max-width: settings.$threshold-mobile) {
     grid-template-columns: 1fr;
+    gap: 2em 0px;
   }
   @media (min-width: settings.$threshold-mobile) and (max-width: (settings.$threshold-desktop + 200px)) {
     grid-template-columns: 1fr 3fr 1fr;

@@ -1,9 +1,9 @@
 <footer>
   <p>
-    <a href="/imprint">imprint</a>
+    <a href="/imprint">Impressum</a>
   </p>
   <p>
-    Icons on this website are <a href="https://www.s-ings.com/typicons/"
+    Icons auf dieser Webseite sind <a href="https://www.s-ings.com/typicons/"
       >Typicons</a
     >
   </p>

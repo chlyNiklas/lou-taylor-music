@@ -7,6 +7,7 @@
     <h1>Café Walz</h1>
     <div>
       <iframe
+        title="song on soundcloud"
         width="100%"
         height="300"
         scrolling="no"
@@ -16,20 +17,40 @@
       />
 
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima modi
-        deserunt, perferendis facilis dolore quo quae facere vitae voluptate
-        maxime, iste suscipit eveniet hic quod, placeat reiciendis dolorem
-        distinctio mollitia.
+        Release von meiner Single und erstem Song “Café Waltz”.
+        <br />
+        <a
+          href="https://youtu.be/57LBGPl1k9A?si=EVVo0WN9ntsIcOcL"
+          target="_blank">YouTube</a
+        >
+        <a
+          href="https://open.spotify.com/track/4NseEH9xheXCQj8aNu25uq?si=220fd17a150142e9"
+          target="_blank">Spotify</a
+        >
+        <a href="https://on.soundcloud.com/zReX5" target="_blank">SoundCloud</a>
+        <br />
+        <i
+          >(Abschlussarbeit der 9. Klasse in der Oberstufen Schule Huttwil in
+          Zusammenarbeit mit Landolin Wirz, Martin Jufer, Lias Bangerter,
+          Emmanuel Killer und Louis Siegfried.)<i />
+        </i>
       </p>
     </div>
   </article>
   <article class="right">
-    <h1>Something else</h1>
+    <h1>Album in Aussicht.</h1>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima modi
-      deserunt, perferendis facilis dolore quo quae facere vitae voluptate
-      maxime, iste suscipit eveniet hic quod, placeat reiciendis dolorem
-      distinctio mollitia.
+      “Mit meinem ersten Lied hinter mir, erhoffe ich in näherer Zukunft ein
+      Album herauszubringen.” Das Album wird verschiedene Genres enthalten und
+      ein Surprise Zusatz-Projekt geben.
+    </p>
+  </article>
+  <article class="left">
+    <h1>Gartenoper Langenthal “die verkaufte Braut.”</h1>
+    <p>
+      Ich werde ab ca. Januar mit der Vorbereitung der Oper “die verkaufte
+      Braut” als Mitglied im Frauenchor starten. Die Konzerte sind auf der
+      Website der Gartenoper Langenthal zu finden.
     </p>
   </article>
 </div>

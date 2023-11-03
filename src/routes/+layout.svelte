@@ -4,6 +4,10 @@
   import "./styles.scss";
 </script>
 
+<svelte:head>
+  <title>Lou Taylor Music</title>
+</svelte:head>
+
 <div class="app">
   <Header />
 
@@ -30,6 +34,7 @@
     max-width: 64rem;
     margin: 0 auto;
     box-sizing: border-box;
+    margin-bottom: 10vh;
   }
 
   @media (min-width: settings.$threshold-desktop) {

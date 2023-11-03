@@ -5,21 +5,19 @@
   import Markdown from "$lib/component/Markdown.svelte";
 </script>
 
-<svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
-</svelte:head>
-
 <div class="content">
-  <article class="left ltm">
+  <article class="left ltm" style="margin-top: 5vh">
     <LouTaylorMusic />
   </article>
   <article class="right">
-    <Image src={lou_taylor_home} alt="Lou Taylor singing" />
+    <Image
+      src={lou_taylor_home}
+      alt="Lou in der reformierten Kirche Huttwil am Konzert geben."
+    />
   </article>
   <article class="left">
-    <h1>Upcoming:</h1>
-    <Markdown src="/etc/uppcomming.md" />
+    <h1>demnächst:</h1>
+    <Markdown src="/etc/upcoming.md" />
   </article>
 </div>
 
@@ -43,7 +41,7 @@
   .right {
     @include grid.right-side;
   }
-  @media (min-width: settings.$threshold-mobile) {
+  @media (min-width: settings.$threshold-mobile) and (max-width: 800px) {
     .ltm {
       align-items: flex-start;
     }

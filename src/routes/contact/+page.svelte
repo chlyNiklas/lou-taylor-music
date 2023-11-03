@@ -4,10 +4,11 @@
 
 <div class="content">
   <article class="left">
-    <h1>Get in touch with me</h1>
+    <h1>Kontaktier mich!</h1>
     <p>
-      If you want to get in touch with me to just say hello, start a project
-      with me or if you want to book me you can do so with ...
+      Wenn du mit mir in Kontakt treten willst, um einfach nur Hallo zu sagen,
+      ein Projekt zu starten oder wenn du mich buchen möchtest, kannst du das
+      über...
     </p>
   </article>
   <article class="right">
@@ -21,19 +22,19 @@
   </article>
   <article class="left">
     <h1><a href="mailto:contact@lou-taylor.com">email</a>,</h1>
-    <p>Just write me, usualy i'm not that rude.</p>
+    <p>Schreib mir einfach, normalerweise bin ich nicht allzu frech.</p>
   </article>
 
   <article class="right">
-    <h1>right here,</h1>
+    <h1>dieses Formular,</h1>
     <Contact />
   </article>
   <article class="left">
-    <h1>or even via letter</h1>
+    <h1>oder sogar per Brief.</h1>
     <div>
       <p>
-        Yes, really. So if you're that fancy <br />
-        and still want to mess around with paper.
+        Ja, wirklich. Also wenn du so ausgefallen bist <br />
+        und immer noch mit Papier herumhantierst.
       </p>
       <address>
         Lou Taylor <br />

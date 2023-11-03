@@ -96,9 +96,10 @@ button:focus:not(:focus-visible) {
   text-align: left;
   h1,
   h2,
-  h3 {
+  h3,
+  p {
     text-align: left;
-    margin: settings.$margin-big settings.$margin-small;
+    margin: settings.$margin-big 10px;
   }
   h2 {
     font-size: 1.5em;
@@ -106,9 +107,9 @@ button:focus:not(:focus-visible) {
   table, 
   th,
   td {
-    border: 1px solid;
+    font-weight: 400;
     border-collapse: collapse;
-    padding: settings.$margin-big;
+    padding: settings.$margin-small;
   }
   table {
     border-radius: settings.$margin-small;

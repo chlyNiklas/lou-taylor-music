@@ -21,21 +21,22 @@
     errors = [];
 
     if (!form.from.trim()) {
-      errors.push("Email is required");
+      errors.push("Email wird benötigt");
     }
 
     if (!form.subject.trim()) {
-      errors.push("Subject is required");
+      errors.push("Betreff wird benötigt");
     }
 
     if (!form.message.trim()) {
-      errors.push("Message is required");
+      errors.push("Nachricht wird benötigt");
     }
 
     return errors.length === 0;
   };
 
   const handleSubmit = () => {
+    // TODO: handleSubmit!
     if (validateForm()) {
       console.log("Form submitted:", form);
 
@@ -52,13 +53,13 @@
 
 {#if !isFormSubmitted}
   <form on:submit|preventDefault={handleSubmit}>
-    <label for="from">Your Email:</label>
+    <label for="from">Deine Email:</label>
     <input type="email" id="from" bind:value={form.from} />
 
-    <label for="subject">Subject:</label>
+    <label for="subject">Betreff:</label>
     <input type="text" id="subject" bind:value={form.subject} />
 
-    <label for="message">Message:</label>
+    <label for="message">Nachricht:</label>
     <textarea id="message" bind:value={form.message} />
 
     {#if errors.length > 0}
@@ -69,7 +70,7 @@
       </ul>
     {/if}
 
-    <button type="submit">Submit</button>
+    <button type="submit">Senden</button>
   </form>
 {:else}
   <p>Form submitted successfully!</p>

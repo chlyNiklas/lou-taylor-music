@@ -4,11 +4,11 @@
   import ti_close from "typicons.font/src/svg/times.svg";
   import SvgButton from "$lib/component/SvgButton.svelte";
   const entries = [
-    { url: "/", name: "Home" },
-    { url: "/gallery/", name: "Gallery" },
-    { url: "/projects/", name: "Projects" },
-    { url: "/contact/", name: "Contact" },
-    { url: "/biography/", name: "Biography" },
+    { url: "/", name: "Startseite" },
+    { url: "/gallery/", name: "Galerie" },
+    { url: "/projects/", name: "Projekte" },
+    { url: "/contact/", name: "Kontakt" },
+    { url: "/biography/", name: "Biografie" },
   ];
   let menue = {
     open: false,
