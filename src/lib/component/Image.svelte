@@ -38,13 +38,16 @@
     max-height: 100%;
     max-width: 100%;
   }
-  button:hover > img {
-    filter: blur(5px) brightness(50%);
-    transition-duration: settings.$transition-duration-short;
-  }
-  button:hover > p {
-    opacity: 1;
-    transition-duration: settings.$transition-duration-short;
+
+  @media (min-width: settings.$threshold-mobile) {
+    button:hover > img {
+      filter: blur(5px) brightness(50%);
+      transition-duration: settings.$transition-duration-short;
+    }
+    button:hover > p {
+      opacity: 1;
+      transition-duration: settings.$transition-duration-short;
+    }
   }
   p.ontop {
     position: absolute;
