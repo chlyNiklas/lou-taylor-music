@@ -21,7 +21,7 @@
     </p>
   </article>
   <article class="left">
-    <h1><a href="mailto:contact@lou-taylor.com">email</a>,</h1>
+    <h1><a href="mailto:kontakt@lou-taylor.ch">email</a>,</h1>
     <p>Schreib mir einfach, normalerweise bin ich nicht allzu frech.</p>
   </article>
 
@@ -37,10 +37,9 @@
         und immer noch mit Papier herumhantierst.
       </p>
       <address>
-        Lou Taylor <br />
-        Musterstrasse 3 <br />
-        6969 Musterort<br />
-        Switzerland <br />
+        Alpenstrasse 22, <br />
+        4950 Huttwil <br />
+        Loana Groux <br />
       </address>
     </div>
   </article>

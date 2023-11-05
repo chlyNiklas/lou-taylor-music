@@ -1,28 +1,61 @@
-# create-svelte
+# Lou Taylor Music
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## About
 
-## Creating a project
+This is a website for Lou Taylor a Jazz Sing and Songwriter based in the canton of Bern.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Design
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Color
 
-# create a new project in my-app
-npm create svelte@latest my-app
+For the colors, I use [Bastille-8](https://lospec.com/palette-list/bastille-8) as a color palette.
+The creamy colors are meant to emphasize the rather old history of jazz and create a calm environment.
+
+### Font
+
+The font is the sans font of the client. In this way, the user has a familiar element and can hold on to something familiar.
+The sans serif font is intended to reflect the elegance of jazz.
+
+### Layout
+
+Here is a screenshot of the first Wireframe made for this site.
+
+![Home Page](layout.png)
+
+In color it looks like this:
+
+![Home Page Color](colored-layout.png)
+
+These are rather old and due too accessibility concerns (the colors aren't very high in contrast) and because
+the contents of the website weren't yet known at the time the layout shifted a bit over the time.
+
+
+## Features
+
+### "Demnächst"-section 
+For ease of use, the upcoming section on the Homepage is loaded through a markdown file so
+that they can be changed easily while in production.
+The file is located at */etc/upcoming.md*.
+
+### Gallery
+
+The images displayed in the gallery are also configured inside the *etc* (editable text configurations) directory.
+Inside the file *gallery.json* path and alt text can be specified.
+
+``` json
+[
+  {
+    "src": "/assets/caffewalz.jpeg",
+    "alt": "Songcover zu meiner Single “Café Waltz“"
+  }
+]
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
@@ -33,6 +66,4 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The outputs in the build directory are ready to be put on to a static server.

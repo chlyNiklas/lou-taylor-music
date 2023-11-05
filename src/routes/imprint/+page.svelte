@@ -5,10 +5,12 @@
 <div class="content">
   <article class="left">
     <address>
-      Lou Taylor <br />
-      Musterstrasse 3 <br />
-      6969 Musterort<br />
-      Switzerland <br />
+      Alpenstrasse 22, <br />
+      4950 Huttwil <br />
+      Loana Groux <br />
+      E-Mail: <a href="mailto:kontakt@lou-taylor.ch">kontakt@lou-taylor.ch</a>
+      <br />
+      0797740153<br />
     </address>
   </article>
   <article class="right">

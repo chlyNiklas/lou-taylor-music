@@ -1,8 +1,6 @@
 <script lang="ts">
-  export const to: string = "contact@lou-taylor.ch";
   type Email = {
     from: string;
-    to: string;
     subject: string;
     message: string;
   };
@@ -12,10 +10,11 @@
 
   let form: Email = {
     from: "",
-    to: to,
     subject: "",
     message: "",
   };
+
+  let response: string = "";
 
   const validateForm = (): boolean => {
     errors = [];
@@ -40,13 +39,28 @@
     if (validateForm()) {
       console.log("Form submitted:", form);
 
+      fetch("");
+      fetch("/api/mail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          subject: form.subject,
+          message: `${form.from} hatt das kontakt formular ausgefüllt. \n ${form.message}`,
+        }),
+      })
+        .then((response) => response.json())
+        .catch((error) => {
+          isFormSubmitted = true;
+          response = error;
+          console.error("Error:", error);
+        });
       form = {
         from: "",
-        to: "contact@lou-taylor.ch",
         subject: "",
         message: "",
       };
-      isFormSubmitted = true;
     }
   };
 </script>
@@ -73,7 +87,7 @@
     <button type="submit">Senden</button>
   </form>
 {:else}
-  <p>Form submitted successfully!</p>
+  <p>{response}</p>
 {/if}
 
 <style lang="scss">
@@ -136,7 +150,7 @@
   }
 
   p {
-    color: #4caf50;
+    color: settings.$color-accent-error;
     font-weight: bold;
   }
 </style>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import Image from "$lib/component/Image.svelte";
-  import lou_taylor_home from "$lib/images/lou-taylor-home.jpeg";
+  import piano from "$lib/images/piano.jpeg";
   import LouTaylorMusic from "$lib/component/LouTaylorMusic.svelte";
   import Markdown from "$lib/component/Markdown.svelte";
 </script>
@@ -11,11 +11,18 @@
   </article>
   <article class="right">
     <Image
-      src={lou_taylor_home}
-      alt="Lou in der reformierten Kirche Huttwil am Konzert geben."
+      src={piano}
+      alt="”Song in Progress”, Lou an der Swiss Jazz School an zukünftigen Projekten am Arbeiten."
     />
   </article>
-  <article class="left">
+  <p class="left">
+    Lou Taylor, offiziell Loana Groux, ist eine 16-jährige Musikerin aus dem
+    Kanton Bern. Sie schreibt Songs, performt als Sängerin und Pianistin in
+    verschiedensten Formationen und besucht momentan das Talentförderprogramm
+    des Gymnasium Hofwil.
+  </p>
+
+  <article class="right">
     <h1>demnächst:</h1>
     <Markdown src="/etc/upcoming.md" />
   </article>

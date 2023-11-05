@@ -7,8 +7,8 @@
     { url: "/", name: "Startseite" },
     { url: "/gallery/", name: "Galerie" },
     { url: "/projects/", name: "Projekte" },
-    { url: "/contact/", name: "Kontakt" },
     { url: "/biography/", name: "Biografie" },
+    { url: "/contact/", name: "Kontakt" },
   ];
   let menue = {
     open: false,
