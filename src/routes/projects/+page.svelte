@@ -4,8 +4,8 @@
 
 <div class="content">
   <h1>Vergangene Projekte:</h1>
-  <article class="left cafewalz">
-    <h2>Café Walz:</h2>
+  <article class="left cafewaltz">
+    <h2>Café Waltz:</h2>
     <div>
       <iframe
         title="song on soundcloud"
@@ -141,7 +141,7 @@
   .right {
     @include grid.right-side;
   }
-  .cafewalz {
+  .cafewaltz {
     @media (min-width: settings.$threshold-desktop) {
       div {
         display: grid;
