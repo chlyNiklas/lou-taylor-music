@@ -42,6 +42,11 @@ The file is located at */etc/upcoming.md*.
 The images displayed in the gallery are also configured inside the *etc* (editable text configurations) directory.
 Inside the file *gallery.json* path and alt text can be specified.
 
+### Contact Form
+
+Contact form actualy works!
+It sends an email to Lou.
+
 ``` json
 [
   {
