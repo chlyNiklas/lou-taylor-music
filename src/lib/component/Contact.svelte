@@ -45,10 +45,7 @@
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          subject: form.subject,
-          message: `${form.from} hatt das kontakt formular ausgefüllt. \n ${form.message}`,
-        }),
+        body: JSON.stringify(form),
       })
         .then((response) => response.json())
         .catch((error) => {

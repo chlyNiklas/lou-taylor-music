@@ -5,8 +5,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // mails always go to Lou 
     $to = "kontakt@lou-taylor.ch";
     $subject = $data['subject'];
-    $message = $data['message'];
-    $headers = 'From: ' + $data['from'];
+    $message = "This mail is straight (ew) from the contact form!\n" . $data['message'];
+    $headers = 'From: ' . $data['from'];
     $success = mail($to, $subject, $message, $headers);
 
     if ($success) {
