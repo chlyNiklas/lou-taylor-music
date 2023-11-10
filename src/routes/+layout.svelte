@@ -2,7 +2,6 @@
   import Header from "$lib/component/Header.svelte";
   import Footer from "$lib/component/Footer.svelte";
   import "./styles.scss";
-  import "../app.css";
 </script>
 
 <svelte:head>
@@ -12,7 +11,7 @@
 <div class="app">
   <Header />
 
-  <main class="flex-col flex-1 max-w-5xl p-6 my-24 mx-auto">
+  <main>
     <slot />
   </main>
   <Footer />
@@ -24,6 +23,18 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 10vh;
   }
 
   @media (min-width: settings.$threshold-desktop) {
