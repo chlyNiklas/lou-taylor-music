@@ -2,12 +2,17 @@
   import Header from "$lib/component/Header.svelte";
   import Footer from "$lib/component/Footer.svelte";
   import "./styles.scss";
+  import dark from "$lib/style/dark.css?raw";
+  let darkMode = `<style>${dark}</style>`;
 </script>
 
 <svelte:head>
   <title>Lou Taylor Music</title>
-</svelte:head>
 
+  {#if false}
+    {@html darkMode}
+  {/if}
+</svelte:head>
 <div class="app">
   <Header />
 

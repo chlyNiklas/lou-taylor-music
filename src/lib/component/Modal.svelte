@@ -31,6 +31,8 @@
   @use "$lib/style/settings.scss";
   span {
     position: absolute;
+
+    z-index: 100;
     top: 0.5em;
     right: 0.5em;
 
@@ -49,5 +51,7 @@
     border-radius: settings.$margin-small;
 
     background-color: settings.$color-bg-1;
+
+    filter: drop-shadow(0px 0px 10px #0009);
   }
 </style>
