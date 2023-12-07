@@ -131,7 +131,4 @@
   .right {
     @include grid.right-side;
   }
-  address {
-    text-align: left;
-  }
 </style>

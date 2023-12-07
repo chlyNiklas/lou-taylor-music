@@ -29,12 +29,8 @@
     justify-content: center;
     text-align: center;
 
-    div {
-      text-align: left;
-
-      address {
-        margin: settings.$margin-small;
-      }
+    address {
+      margin: settings.$margin-small;
     }
   }
 

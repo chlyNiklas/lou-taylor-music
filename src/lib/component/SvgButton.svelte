@@ -44,9 +44,9 @@
     padding: settings.$margin-small;
   }
   .dark {
-    fill: settings.$color-dark-0;
+    fill: var(--color-dark-0);
   }
   .light {
-    fill: settings.$color-light-0;
+    fill: var(--color-light-0);
   }
 </style>

@@ -96,7 +96,7 @@
   @use "$lib/style/settings.scss";
   header {
     display: flex;
-    background-color: settings.$color-dark-0;
+    background-color: var(--color-dark-0);
     justify-content: space-between;
   }
   nav {
@@ -173,14 +173,14 @@
     height: 100%;
     align-items: center;
     padding: 0 0.5rem;
-    color: settings.$color-light-0;
+    color: var(--color-light-0);
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-decoration: none;
   }
 
   a:hover {
-    color: settings.$color-accent-strong;
+    color: var(--color-accent-strong);
   }
 
   @media (min-width: settings.$threshold-desktop) {

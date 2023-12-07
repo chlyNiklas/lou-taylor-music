@@ -55,7 +55,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: settings.$color-light-0;
+    color: var(--color-light-0);
     text-align: center;
 
     opacity: 0;

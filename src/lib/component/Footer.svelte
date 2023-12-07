@@ -17,8 +17,8 @@
 
     text-align: center;
 
-    background-color: settings.$color-dark-0;
-    color: settings.$color-light-2;
+    background-color: var(--color-dark-0);
+    color: var(--color-light-2);
 
     justify-content: space-evenly;
     flex-wrap: wrap;

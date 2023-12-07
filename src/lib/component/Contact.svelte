@@ -102,7 +102,7 @@
     textarea {
       width: 100%;
       padding: 8px;
-      border: 1px solid settings.$color-bg-2;
+      border: 1px solid var(--color-bg-2);
       border-radius: settings.$margin-small;
       box-sizing: border-box;
       background-color: #fff;
@@ -117,7 +117,7 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-      color: settings.$color-accent-error;
+      color: var(--color-accent-error);
       font-weight: 500;
 
       li {
@@ -131,7 +131,7 @@
       margin: 0 auto;
       padding: settings.$margin-small settings.$margin-big;
 
-      background-color: settings.$color-accent-strong;
+      background-color: var(--color-accent-strong);
       color: white;
       border: none;
       border-radius: settings.$margin-small;
@@ -142,13 +142,13 @@
       }
       &:active,
       &:disabled {
-        background-color: settings.$color-accent-weak;
+        background-color: var(--color-accent-weak);
       }
     }
   }
 
   p {
-    color: settings.$color-accent-error;
+    color: var(--color-accent-error);
     font-weight: bold;
   }
 </style>

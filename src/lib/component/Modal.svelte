@@ -40,7 +40,7 @@
     border: none;
     border-radius: settings.$margin-small;
 
-    background-color: settings.$color-bg-1;
+    background-color: var(--color-bg-1);
   }
   dialog {
     min-width: 20vw;
@@ -50,7 +50,7 @@
     border: solid 0;
     border-radius: settings.$margin-small;
 
-    background-color: settings.$color-bg-1;
+    background-color: var(--color-bg-1);
 
     filter: drop-shadow(0px 0px 10px #0009);
   }
