@@ -3,6 +3,8 @@
   import ti_menue from "typicons.font/src/svg/th-menu.svg";
   import ti_close from "typicons.font/src/svg/times.svg";
   import SvgButton from "$lib/component/SvgButton.svelte";
+  import ThemeSwitcher from "$lib/component/ThemeSwitcher.svelte";
+
   const entries = [
     { url: "/", name: "Startseite" },
     { url: "/gallery/", name: "Galerie" },
@@ -10,6 +12,7 @@
     { url: "/biography/", name: "Biografie" },
     { url: "/contact/", name: "Kontakt" },
   ];
+
   let menue = {
     open: false,
     src: ti_menue,
@@ -22,6 +25,7 @@
       menue.src = ti_menue;
     }
   }
+
   function getPageName(): string {
     let name: string[] = [$page.url.pathname];
     name = name[0].split("/");
@@ -33,8 +37,11 @@
 </script>
 
 <header>
-  <div class="corner" />
-
+  <div class="corner">
+    <div>
+      <ThemeSwitcher />
+    </div>
+  </div>
   <nav>
     <ul class="desktop">
       {#if !entries.find((e) => e.url === $page.url.pathname)}
@@ -100,20 +107,21 @@
   .corner {
     width: 3em;
     height: 3em;
-  }
 
-  .corner a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
+    div {
+      display: flex;
 
-  .corner img {
-    width: 2em;
-    height: 2em;
-    object-fit: contain;
+      height: 100%;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 2em;
+      height: 2em;
+      object-fit: contain;
+    }
   }
   .invisible {
     height: 0;

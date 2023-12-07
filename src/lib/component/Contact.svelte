@@ -105,6 +105,7 @@
       border: 1px solid settings.$color-bg-2;
       border-radius: settings.$margin-small;
       box-sizing: border-box;
+      background-color: #fff;
     }
 
     textarea {
