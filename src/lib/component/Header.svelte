@@ -94,6 +94,7 @@
 
 <style lang="scss">
   @use "$lib/style/settings.scss";
+
   header {
     display: flex;
     background-color: var(--color-dark-0);
@@ -185,12 +186,12 @@
 
   @media (min-width: settings.$threshold-desktop) {
     .mobile {
-      display: none;
+      display: none !important;
     }
   }
   @media (max-width: settings.$threshold-desktop) {
     .desktop {
-      display: none;
+      display: none !important;
     }
   }
 </style>

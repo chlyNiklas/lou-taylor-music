@@ -1,10 +1,37 @@
 <script lang="ts">
   import Header from "$lib/component/Header.svelte";
   import Footer from "$lib/component/Footer.svelte";
+  import { onMount } from "svelte";
+  import { isLight } from "$lib/stores";
+  import dark from "$lib/style/themes/dark.css?raw";
+  import light from "$lib/style/themes/light.css?raw";
   import "./styles.scss";
+
+  let theme: string = "";
+
+  onMount(() => {
+    let saved_isLight = localStorage.getItem("isLight") === "true";
+    if (saved_isLight) {
+      if (saved_isLight != $isLight) {
+        isLight.set(saved_isLight);
+      }
+    } else {
+      isLight.set(!window.matchMedia("(prefers-color-scheme: dark)").matches);
+    }
+    isLight.subscribe((value) => (localStorage.isLight = value));
+  });
+
+  isLight.subscribe((isLight) => {
+    if (isLight) {
+      theme = light;
+    } else {
+      theme = dark;
+    }
+  });
 </script>
 
 <svelte:head>
+  {@html `<style>${theme}</style>`}
   <title>Lou Taylor Music</title>
 </svelte:head>
 <div class="app">
