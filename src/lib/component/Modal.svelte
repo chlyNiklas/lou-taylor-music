@@ -22,7 +22,7 @@
 >
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div on:click|stopPropagation>
-    <span> <SvgButton src={ti_close} on:click={() => dialog.close()} /></span>
+    <span> <SvgButton src={ti_close}  on:click={() => dialog.close()} /></span>
     <slot />
   </div>
 </dialog>

@@ -40,6 +40,7 @@ body {
 h1,
 h2,
 p {
+  color: var(--color-text);
 	font-weight: 400;
   margin: settings.$margin-small settings.$margin-big;
 }

@@ -1,9 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { isLight } from "$lib/stores";
 
   export let src: string;
-  export let color: "dark" | "light" = "dark";
+  export let color: "dark" | "light" = $isLight? "light" : "light";
   export let ariaLabel: string = "icon";
+  export let rotation: number = 0;
 
   let svg: string | null = null;
   let mounted: boolean = false;
@@ -17,6 +19,7 @@
 </script>
 
 <button
+  style={`transform: rotate(${rotation}deg)`}
   on:click
   class:dark={color === "dark"}
   class:light={color === "light"}
