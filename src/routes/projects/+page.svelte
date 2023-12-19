@@ -1,14 +1,9 @@
-<script>
-  import Page from "../+page.svelte";
-</script>
-
 <div class="content">
   <h1>Vergangene Projekte:</h1>
   <article class="right">
     <h2>Kulturpreis Konzert, Lions Club oberes Langetental.</h2>
-    Zusammen mit dem Pianisten Lias Bangerter habe ich während der Ladies Night
-    des LC Oberes Langetental auftgereten und den Kulturpreis 2023 LC Oberes Langentental
-    entgegengenommen.
+    Zusammen mit dem Pianisten Lias Bangerter trat ich an der Ladies Night des LC
+    Oberes Langetental auf und erhielt den Kulturpreis 2023 LC Oberes Langenthal.
   </article>
   <article class="left cafewaltz">
     <h2>Café Waltz:</h2>
@@ -24,7 +19,7 @@
       />
 
       <p>
-         Release von meiner Single und 1. Song “Café Waltz”.
+        Release von meiner Single und 1. Song “Café Waltz”.
         <br />
         <a
           href="https://youtu.be/57LBGPl1k9A?si=EVVo0WN9ntsIcOcL"
@@ -87,13 +82,13 @@
   <article class="left">
     <h2>Schülerband Hofmatt:</h2>
     <p>
-      Ab der 7. Klasse besuchte ich regelmässig die Schülerband unter der Führung
-      von Matthias Boss. In dieser Formation nahm ich an mind. Einem Konzert pro
-      Jahr teil.
+      Ab der 7. Klasse besuchte ich regelmässig die Schülerband unter der
+      Führung von Matthias Boss. In dieser Formation nahm ich an mind. Einem
+      Konzert pro Jahr teil.
     </p>
   </article>
   <h1>Zukünftige Projekte:</h1>
-    <article class="right">
+  <article class="right">
     <h2>Album in Aussicht:</h2>
     <p>
       “Mit meinem ersten Lied hinter mir, erhoffe ich in näherer Zukunft ein
@@ -101,8 +96,7 @@
       ein Surprise Zusatz-Projekt geben.
     </p>
   </article>
-
- </div>
+</div>
 
 <style lang="scss">
   @use "$lib/style/settings.scss";

@@ -23,7 +23,7 @@
   </p>
 
   <article class="right">
-    <h1>demnächst:</h1>
+    <h1>Demnächst:</h1>
     <Markdown src="/etc/upcoming.md" />
   </article>
 </div>

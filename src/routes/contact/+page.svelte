@@ -12,7 +12,7 @@
     </p>
   </article>
   <article class="right">
-    <h1>socialmedia,</h1>
+    <h1>Socialmedia,</h1>
     <p>
       <a href="https://www.instagram.com/lou.t_jazz/" target="_blank"
         >Instagram</a
@@ -21,16 +21,16 @@
     </p>
   </article>
   <article class="left">
-    <h1><a href="mailto:kontakt@lou-taylor.ch">email</a>,</h1>
+    <h1><a href="mailto:kontakt@lou-taylor.ch">Email</a>,</h1>
     <p>Schreib mir einfach, normalerweise bin ich nicht allzu frech.</p>
   </article>
 
   <article class="right">
-    <h1>dieses Formular,</h1>
+    <h1>Dieses Formular,</h1>
     <Contact />
   </article>
   <article class="left">
-    <h1>oder sogar per Brief.</h1>
+    <h1>Oder sogar per Brief.</h1>
     <div>
       <p>
         Ja, wirklich. Also wenn du so ausgefallen bist <br />

@@ -27,8 +27,8 @@ Ich erarbeitete innerhalb sechs Monaten zusammen mit verschiedenem Musiker*innen
 Ich werde am 13. Und 14. Juni als Gesangssolistin, Pianistin und
 Perkussionistin als Teil der Kadetten Huttwil auftreten. 
 
-*Donnerstag, 13.6.2024, 20:00|
+*Donnerstag, 13.6.2024, 20:00
 
-*Freitag, 15.6.2024, 14:00 & 20:00*|
+*Freitag, 15.6.2024, 14:00 & 20:00*
 
-*[Campus Perspektven](https://campusperspektiven.ch/)*|
+*[Campus Perspektven](https://campusperspektiven.ch/)*
