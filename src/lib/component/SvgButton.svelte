@@ -3,7 +3,7 @@
   import { isLight } from "$lib/stores";
 
   export let src: string;
-  export let color: "dark" | "light" = $isLight? "light" : "light";
+  export let color: "dark" | "light" | null = null;
   export let ariaLabel: string = "icon";
   export let rotation: number = 0;
 
@@ -21,8 +21,8 @@
 <button
   style={`transform: rotate(${rotation}deg)`}
   on:click
-  class:dark={color === "dark"}
-  class:light={color === "light"}
+  class:dark={color === "dark" || (color === null && $isLight)}
+  class:light={color === "light" || (color === null && !$isLight)}
   id={ariaLabel}
   aria-label={ariaLabel}
 >

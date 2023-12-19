@@ -4,6 +4,12 @@
 
 <div class="content">
   <h1>Vergangene Projekte:</h1>
+  <article class="right">
+    <h2>Kulturpreis Konzert, Lions Club oberes Langetental.</h2>
+    Zusammen mit dem Pianisten Lias Bangerter habe ich während der Ladies Night
+    des LC Oberes Langetental auftgereten und den Kulturpreis 2023 LC Oberes Langentental
+    entgegengenommen.
+  </article>
   <article class="left cafewaltz">
     <h2>Café Waltz:</h2>
     <div>
@@ -18,7 +24,7 @@
       />
 
       <p>
-        Release von meiner Single und erstem Song “Café Waltz”.
+         Release von meiner Single und 1. Song “Café Waltz”.
         <br />
         <a
           href="https://youtu.be/57LBGPl1k9A?si=EVVo0WN9ntsIcOcL"
@@ -81,21 +87,13 @@
   <article class="left">
     <h2>Schülerband Hofmatt:</h2>
     <p>
-      Ab er 7. Klasse besuchte ich regelmässig die Schülerband unter der Führung
+      Ab der 7. Klasse besuchte ich regelmässig die Schülerband unter der Führung
       von Matthias Boss. In dieser Formation nahm ich an mind. Einem Konzert pro
       Jahr teil.
     </p>
   </article>
   <h1>Zukünftige Projekte:</h1>
-  <article class="right">
-    <h2>Kadetten Konzerte 2024:</h2>
-    <p>
-      Ich werde am 13. Und 14. Juni als Gesangssolistin, Pianistin und
-      Perkussionistin als Teil der Kadetten Huttwil auftreten. (weitere Infos
-      folgen.)
-    </p>
-  </article>
-  <article class="left">
+    <article class="right">
     <h2>Album in Aussicht:</h2>
     <p>
       “Mit meinem ersten Lied hinter mir, erhoffe ich in näherer Zukunft ein
@@ -104,15 +102,7 @@
     </p>
   </article>
 
-  <article class="right">
-    <h2>Gartenoper Langenthal “die verkaufte Braut.”:</h2>
-    <p>
-      Ich werde ab ca. Januar mit der Vorbereitung der Oper “die verkaufte
-      Braut” als Mitglied im Erwachsenenchor starten. Die Konzerte sind auf der
-      Website der Gartenoper Langenthal zu finden.
-    </p>
-  </article>
-</div>
+ </div>
 
 <style lang="scss">
   @use "$lib/style/settings.scss";
