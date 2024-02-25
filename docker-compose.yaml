@@ -1,0 +1,7 @@
+
+version: "3"
+services:
+  website:
+    image: nbr140416/lou-taylor-music:v1    
+    ports:
+      - "80:80"
