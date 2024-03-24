@@ -1,8 +1,11 @@
-<script>
-  import Contact from "$lib/component/Contact.svelte";
+<script lang="ts">
   import Image from "$lib/component/Image.svelte";
+    import Markdown from "$lib/component/Markdown.svelte";
   import kiss from "$lib/images/kiss.jpeg";
 </script>
+
+
+  <Markdown src="/etc/biography.md" leftRightStyling={true}/>
 
 <div class="content">
   <article class="all">
