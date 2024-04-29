@@ -1,34 +1,52 @@
-## Swiss Jazz School Gipsy Jazz Ensemble Konzert: 
+### Chor-Konzerte *Birds*
 
-Ich erarbeitete innerhalb sechs Monaten zusammen mit verschiedenem Musiker*innen der Swiss Jazz School mehrere Stücke, welche wir als Ensemble aufführen werden. 
+Als Schülerin des Gymnasiums Hofwil trete ich mit dem Schulchor an mehreren Tagen als Gesangssolistin auftreten.
 
-*Mittwoch, 24.01.24, 19:30*
+***Location:** *Aula, Gymnasium Hofwil*
 
-*Mahogany Hall Bern*
+*Tickets über **[Eventfrog](https://eventfrog.ch/de/p/gruppen/hofwilchor-birds-7171131282276946311.html)** oder Abendkasse erhältlich!*
 
-## Playtime festival
+*(Mit Solo) Mittwoch, 01.05.2024, 19:30*
 
-*Donnerstag 25.01.24*
+*Donnerstag, 02.05.2024, 19:30*
 
-## Kadetten Huttwil Gottesdienst-Begleitung
+*(Mit Solo) Samstag, 04.05.2024, 19:30*
 
-*Sonntag, 18.2.2014, 9:00*
+*Sonntag, 05.05.2024, 16:00*
 
-*reformierte Kirche Huttwil*
+![Flyer](/assets/birds_flyer.webp)
 
-## TaF-Jazz and Alumni Concert
+*[Offizieller Link zu Schulwebsite](https://www.gymhofwil.ch/c42/vorschau/konzerte-birds-2024)*
 
-*Donnerstag, 22.2.2014, 20:00*
 
-*[Bären Buchsi](https://www.baerenbuchsi.ch/)*
+### Klavier Konzert 
+Ich nehme seit mehreren Jahren Klavierunterricht bei Martin Jufer und habe nun mein Abschlusskonzert mit ihm.
 
-# Kadetten Konzerte
+*Samstag, 01.06.2024*
+*Weitere Informationen folgen*
+
+
+### SJS Showcase
+
+Parallel zum Gymnasium besuche ich ebenfalls noch die Swiss Jazz School in Bern. Ich werde zusammen mit anderen Musikern einige Stücke vortragen
+
+*Donnerstag, 06.06.2024, 19:00*
+*> Weitere Informationen folgen*
+
+### Ensemble Konzerte
+
+Ebenfalls werde ich als Ensemble-Member in einer "One-Semester" Band einige Stücke aufführen.
+
+*Weitere Informationen folgen*
+
+
+### Kadetten Konzerte
 
 Ich werde am 13. Und 14. Juni als Gesangssolistin, Pianistin und
 Perkussionistin als Teil der Kadetten Huttwil auftreten. 
 
-*Donnerstag, 13.6.2024, 20:00
+*Donnerstag, 13.6.2024, 20:00*
 
-*Freitag, 15.6.2024, 14:00 & 20:00*
+*Freitag, 14.6.2024, 14:00 & 20:00*
 
 *[Campus Perspektven](https://campusperspektiven.ch/)*

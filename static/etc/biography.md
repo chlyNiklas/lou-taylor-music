@@ -5,7 +5,7 @@ während ihr schriller Gesang durch das ganze Haus zu hören war. Während
 andere Mädchen in ihrem Alter sich für die Fasnacht als Prinzessinnen und
 Feen verkleideten, stach Loana in der Montur von Kiss aus der Menge heraus
 
-![is that an alt text?](/assets/kiss.jpeg)
+![Lou in ihrem Kiss-Kostüm.](/assets/kiss.webp)
 
 Mit sieben Jahren wurde das quirlige Kind eingeschult und um übrige
 Energie loszuwerden, meldeten Loana’s Eltern sie für Karate und Schlagzeug

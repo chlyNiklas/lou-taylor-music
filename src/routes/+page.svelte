@@ -1,6 +1,6 @@
 <script lang="ts">
   import Image from "$lib/component/Image.svelte";
-  import piano from "$lib/images/piano.jpeg";
+  import homeImage from "$lib/images/TafJazzAlumniLouBild.webp";
   import LouTaylorMusic from "$lib/component/LouTaylorMusic.svelte";
   import Markdown from "$lib/component/Markdown.svelte";
 </script>
@@ -11,7 +11,7 @@
   </article>
   <article class="right">
     <Image
-      src={piano}
+      src={homeImage}
       alt="”Song in Progress”, Lou an der Swiss Jazz School an zukünftigen Projekten am Arbeiten."
     />
   </article>

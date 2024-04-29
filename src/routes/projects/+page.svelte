@@ -1,3 +1,10 @@
+<script lang="ts">
+  import Markdown from "$lib/component/Markdown.svelte";
+</script>
+
+  <Markdown src="/etc/vergangene_projekte.md" formating="header left right"/>
+
+
 <div class="content">
   <h1>Vergangene Projekte:</h1>
   <article class="right">

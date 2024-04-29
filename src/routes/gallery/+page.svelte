@@ -4,5 +4,5 @@
 
 </script>
 
-<Markdown src="/etc/gallery.md" leftRightStyling={true}/>
+<Markdown src="/etc/gallery.md" formating="left right"/>
 

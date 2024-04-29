@@ -64,6 +64,11 @@
   div {
     max-height: 100%;
     max-width: 100%;
+
+    img {
+      max-width: 80vw;
+      max-height: 80vh;
+    }
   }
 
   img {
