@@ -64,3 +64,4 @@ Solo-Karriere zu legen. Mit der Aufnahme in der TaF-Klasse des Gymnasium
 Hofwils kann sie ihre musikalische und schulische Ausbildung parallel
 führen.
 
+Im Gymnasium Hofwil nimmt Loana an verschiedensten Projekten teil wie die Konzerte des Schulchors, als Pianistin-, Sängerin- und Perkussionistin in der Kadetten Musik Huttwil und als Schülerin der Swiss Jazz School Bern an verschiedenen Konzerten.
